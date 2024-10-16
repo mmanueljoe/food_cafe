@@ -4,8 +4,16 @@
     box-sizing: border-box;
 }
 
+html{
+    background-color: #f9f9f9;
+}
+
 h1,h2,h3,h4,ul{
     font-family: Poppins,sans-serif;
+}
+
+p{
+    font-family: sans-serif;
 }
 
 
@@ -49,27 +57,31 @@ ul li a:hover{
     width: 100%;
     height: 250px;
     font-family: sans-serif;
-    background-color: #000;
-}
-
-.container-search{
     background: url(./images/dishes.jpg);
     background-size: cover;
+}
+
+
+.container-search{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    opacity: 0.6;
+    position: relative;
+    opacity: 0.8;
+    background-color: #000;
 }
+
 
 .search-bar{
     padding: 10px 200px;
     border-style: none;
     font-size: 18px;
     border-radius: 5px;
-    position: relative;
     z-index: 1;
+    position: relative;
+    top: 60px;
+    opacity: 1;
 }
 
 .search-button{
@@ -78,9 +90,10 @@ ul li a:hover{
     font-size: 18px;
     border-radius: 5px;
     background-color: rgb(253, 13, 65);
-    position: relative;
     color: #f9f9f9;
-    z-index: 2;
+    opacity: 1;
+    position: relative;
+    top: 60px;
 }
 
 .search-button:hover{
@@ -132,3 +145,106 @@ ul li a:hover{
     font-weight: bold;
 }
 
+
+
+/* food menu section starts here */
+
+#food-menu{
+    padding: 120px 20px;
+    background-color: #e9e9e9;
+}
+
+#food-menu h1{
+    text-align: center;
+    font-size: 3.0rem;
+    margin-bottom: 40px;
+}
+
+
+.food-menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Optional: ensures even spacing */
+}
+
+.food {
+    display: flex;
+    flex-basis: calc(50% - 20px); 
+    padding: 20px 10px;
+    background-color: white;
+    margin: 10px; 
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 0.7 #000;
+}
+
+.food-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.food-img{
+    width: 50%;
+}
+
+.food-img img{
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.btn{
+    width: 100px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    font-family: Poppins;
+    border-style: none;
+    border-radius: 10px;
+    background-color: rgb(253, 13, 65);
+    color: #fff;
+    font-weight: 500;
+}
+
+.cta-text a{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.10rem;
+    font-family: poppins;
+    color: rgb(253, 13, 65);
+    font-weight: 500;
+}
+
+
+.cta-text{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.10rem;
+    font-family: poppins;
+    color: rgb(253, 13, 65);
+    font-weight: 500;
+}
+
+
+
+.cta-text a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+
+.food-name, .food-price{
+    margin: 5px 0;
+}
+
+.food-price{
+    font-size: 1.10rem;
+    font-weight: 500;
+}
+
+.food-description{
+    width: 70%;
+}
+/* food menu section ends here */
