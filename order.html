@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Food Cafe</title>
 </head>
 <body>
-    <h1>Order Page</h1>
+    <!-- navbar starts here -->
+    <section id="navbar">
+        <div class="container">
+          <div class="logo">
+            <a href="">
+              <img src="./images/My_Logo.png" alt="" />
+            </a>
+          </div>
+          <div class="menu text-right">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="/categories.html">Categories</a></li>
+              <li><a href="">Food</a></li>
+              <li><a href="./order.html">Order</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- navbar ends here -->
+
+      <!-- Order Form Section -->
+    <section id="form">
+        <h1>Place Your Order</h1>
+        <fieldset>
+            <legend>Order Details</legend>
+            
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="address">Delivery Address</label>
+            <textarea id="address" name="address" rows="4" placeholder="Enter delivery address" required></textarea>
+
+            <label for="food">Food Item</label>
+            <div class="food-img">
+                <img src="./images/jollof.jpg" alt="Food Item">
+            </div>
+
+            <button type="submit" class="btn-order">Order Now</button>
+        </fieldset>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Simplyjoe. All Rights Reserved.</p>
+        <a href="#">Privacy Policy</a>
+    </footer>
 </body>
 </html>
